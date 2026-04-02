@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Capco Construction Portfolio | Past Work</title>
+  <meta name="description" content="Browse past Capco Construction projects in Sault Ste. Marie, including decks, fences, accessibility ramps, gazebos, sunrooms, and other contracting work." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="portfolio-page">
+  <header class="site-header compact-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Capco Construction home">
+        <img src="assets/logo.png" alt="Capco Construction logo" />
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="site-nav" id="siteNav">
+        <a href="index.html">Home</a>
+        <a href="index.html#services">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="index.html#contact">Contact</a>
+        <a class="nav-cta" href="tel:7059493564">Call 705-949-3564</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="portfolio-hero">
+      <div class="container reveal">
+        <p class="eyebrow">Past work</p>
+        <h1>Project photos and completed work.</h1>
+        <p>This page is set up so you can keep adding photos over time. Replace the sample gallery images or duplicate the cards below whenever you want to upload more completed work.</p>
+      </div>
+    </section>
+
+    <section class="section portfolio-section">
+      <div class="container">
+        <div class="portfolio-toolbar reveal">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="decks">Decks</button>
+          <button class="filter-btn" data-filter="fences">Fences</button>
+          <button class="filter-btn" data-filter="ramps">Ramps</button>
+          <button class="filter-btn" data-filter="structures">Gazebos &amp; Sunrooms</button>
+        </div>
+
+        <div class="portfolio-grid">
+          <article class="portfolio-card reveal" data-category="structures">
+            <img src="assets/projects.png" alt="Gazebo and sunroom project by Capco Construction" />
+            <div class="portfolio-card-body">
+              <span class="portfolio-label">Gazebos &amp; Sunrooms</span>
+              <h2>Outdoor structures</h2>
+              <p>Use this section for enclosed additions, gazebos, seasonal rooms, and custom exterior builds.</p>
+            </div>
+          </article>
+
+          <article class="portfolio-card reveal" data-category="decks">
+            <img src="assets/projects.png" alt="Deck build by Capco Construction" />
+            <div class="portfolio-card-body">
+              <span class="portfolio-label">Decks</span>
+              <h2>Custom deck projects</h2>
+              <p>Perfect for showing different layouts, stairs, railings, finishes, and backyard transformations.</p>
+            </div>
+          </article>
+
+          <article class="portfolio-card reveal" data-category="fences">
+            <img src="assets/projects.png" alt="Fence project by Capco Construction" />
+            <div class="portfolio-card-body">
+              <span class="portfolio-label">Fences</span>
+              <h2>Privacy and boundary work</h2>
+              <p>Feature wood fencing, gates, decorative details, or perimeter upgrades for homes and properties.</p>
+            </div>
+          </article>
+
+          <article class="portfolio-card reveal" data-category="ramps">
+            <img src="assets/ramp.png" alt="Accessibility ramp project by Capco Construction" />
+            <div class="portfolio-card-body">
+              <span class="portfolio-label">Accessibility Ramps</span>
+              <h2>Accessibility-focused builds</h2>
+              <p>Highlight mobility improvements and practical access solutions for residential or commercial spaces.</p>
+            </div>
+          </article>
+
+          <article class="portfolio-card reveal" data-category="decks">
+            <img src="assets/about-bg.png" alt="Additional contracting project by Capco Construction" />
+            <div class="portfolio-card-body">
+              <span class="portfolio-label">General Contracting</span>
+              <h2>Renovation and detail work</h2>
+              <p>Add interior updates, repairs, custom carpentry, or before-and-after photos here as your gallery grows.</p>
+            </div>
+          </article>
+
+          <article class="portfolio-card reveal" data-category="all">
+            <img src="assets/about-bg.png" alt="Capco Construction work sample placeholder" />
+            <div class="portfolio-card-body">
+              <span class="portfolio-label">Add More Photos</span>
+              <h2>Easy to expand</h2>
+              <p>Duplicate any portfolio card in the HTML and point the image source to a new uploaded photo to keep building this page out.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer minimal-footer">
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Capco Construction. Serving Sault Ste. Marie since 1990.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
