@@ -585,3 +585,351 @@ h3 {
     padding: 1.2rem;
   }
 }
+
+
+/* --- CAPCO LOGO / HEADER IMPROVEMENTS --- */
+.brand {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.brand img {
+  width: clamp(220px, 26vw, 360px);
+  max-height: 90px;
+  object-fit: contain;
+  filter: drop-shadow(0 10px 25px rgba(0, 0, 0, 0.28));
+}
+
+.compact-header .header-inner {
+  min-height: 96px;
+}
+
+.site-header {
+  background: rgba(12, 12, 12, 0.92);
+  box-shadow: 0 12px 34px rgba(0, 0, 0, 0.16);
+}
+
+.site-nav a[aria-current="page"] {
+  color: var(--text);
+}
+
+/* --- PORTFOLIO PAGE --- */
+.section-tight {
+  padding: 4rem 0;
+}
+
+.section-heading {
+  max-width: 760px;
+  margin-bottom: 2rem;
+}
+
+.section-heading p:last-child {
+  color: var(--muted);
+}
+
+.portfolio-hero {
+  padding: 5.5rem 0 4.5rem;
+  background:
+    linear-gradient(135deg, rgba(8, 8, 8, 0.94), rgba(20, 20, 20, 0.86)),
+    radial-gradient(circle at top right, rgba(212, 171, 45, 0.12), transparent 34%);
+}
+
+.portfolio-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(360px, 460px);
+  gap: 2rem;
+  align-items: center;
+}
+
+.portfolio-hero-copy {
+  max-width: 760px;
+}
+
+.portfolio-hero-copy > p:not(.eyebrow) {
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.showcase-card {
+  display: grid;
+  gap: 1rem;
+}
+
+.showcase-media-wrap {
+  position: relative;
+  min-height: 520px;
+  overflow: hidden;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  background: #141414;
+}
+
+.showcase-media {
+  width: 100%;
+  height: 100%;
+  min-height: 520px;
+  object-fit: cover;
+}
+
+.showcase-overlay {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 1.25rem;
+  background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.88));
+}
+
+.showcase-overlay h2 {
+  font-size: clamp(1.5rem, 2.3vw, 2.1rem);
+  margin-bottom: 0.35rem;
+}
+
+.showcase-overlay p {
+  margin-bottom: 0;
+  color: rgba(244, 241, 232, 0.82);
+}
+
+.showcase-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.4rem 0.8rem;
+  margin-bottom: 0.8rem;
+  border-radius: 999px;
+  background: rgba(212, 171, 45, 0.18);
+  color: #f3d36b;
+  border: 1px solid rgba(212, 171, 45, 0.32);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.showcase-controls {
+  display: flex;
+  gap: 0.8rem;
+  justify-content: flex-end;
+}
+
+.showcase-btn {
+  width: 52px;
+  height: 52px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.16);
+  background: #1a1a1a;
+  color: var(--text);
+  cursor: pointer;
+  font-size: 1.6rem;
+  line-height: 1;
+  transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.showcase-btn:hover,
+.showcase-btn:focus-visible {
+  transform: translateY(-2px);
+  border-color: rgba(212, 171, 45, 0.5);
+  background: #202020;
+}
+
+.portfolio-section {
+  background: #121212;
+}
+
+.portfolio-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.filter-btn {
+  padding: 0.85rem 1.05rem;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: #1a1a1a;
+  color: var(--muted);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: var(--gold);
+  color: #111;
+  border-color: var(--gold);
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.portfolio-card {
+  overflow: hidden;
+  border-radius: 22px;
+}
+
+.portfolio-media {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: #0f0f0f;
+}
+
+.portfolio-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.45s ease;
+}
+
+.portfolio-card:hover .portfolio-media img {
+  transform: scale(1.04);
+}
+
+.portfolio-card-body {
+  padding: 1.2rem 1.2rem 1.4rem;
+}
+
+.portfolio-card-body p {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+.portfolio-label {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+  color: var(--gold);
+  font-weight: 700;
+}
+
+.portfolio-note-band {
+  background: linear-gradient(180deg, #121212 0%, #0d0d0d 100%);
+}
+
+.cta-band-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  align-items: center;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.menu-toggle {
+  display: none;
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: #191919;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  margin: 5px auto;
+  background: var(--text);
+}
+
+.site-footer {
+  border-top: 1px solid var(--line);
+  background: #0b0b0b;
+}
+
+.footer-bottom {
+  padding: 1.6rem 0;
+  color: var(--muted);
+  text-align: center;
+}
+
+@media (max-width: 1080px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .portfolio-hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .showcase-media-wrap,
+  .showcase-media {
+    min-height: 440px;
+  }
+}
+
+@media (max-width: 900px) {
+  .menu-toggle {
+    display: inline-block;
+  }
+
+  .site-nav {
+    position: absolute;
+    top: calc(100% + 1px);
+    left: 1rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.4rem;
+    padding: 1rem;
+    border-radius: 20px;
+    background: rgba(16, 16, 16, 0.98);
+    border: 1px solid var(--line);
+    box-shadow: var(--shadow);
+  }
+
+  .site-nav.is-open {
+    display: flex;
+  }
+
+  .site-nav a {
+    padding: 0.85rem 0.95rem;
+    border-radius: 14px;
+  }
+
+  .nav-cta {
+    width: 100%;
+  }
+}
+
+@media (max-width: 720px) {
+  .brand img {
+    width: clamp(190px, 48vw, 250px);
+    max-height: 72px;
+  }
+
+  .compact-header .header-inner {
+    min-height: 82px;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .showcase-media-wrap,
+  .showcase-media {
+    min-height: 320px;
+  }
+
+  .hero-actions,
+  .cta-band-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-actions .btn,
+  .cta-band-actions .btn {
+    width: 100%;
+  }
+}
