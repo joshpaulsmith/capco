@@ -572,4 +572,12 @@ h3 {
   .hero { padding-top: 5rem; }
   .showcase-media { height: 320px; }
   .footer-grid { gap: 1rem; }
+}.site-credit {
+  text-align: center;
+  font-family: 'Roboto Mono', monospace;
+  margin-top: 20px;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.75;
 }
