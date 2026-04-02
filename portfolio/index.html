@@ -4,17 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Capco Construction Portfolio | Sault Ste. Marie Contracting Projects</title>
-  <meta
-    name="description"
-    content="Browse completed Capco Construction projects in Sault Ste. Marie, including decks, fences, accessibility ramps, gazebos, sunrooms, and general contracting work from a trusted local business serving the area for decades."
-  />
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Browse completed Capco Construction projects in Sault Ste. Marie, including decks, fences, accessibility ramps, gazebos, sunrooms, and general contracting work from a trusted local business serving the area for decades." />
+  <link rel="stylesheet" href="../styles.css" />
 </head>
 <body class="portfolio-page">
   <header class="site-header compact-header" id="top">
     <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="Capco Construction home">
-        <img src="capcologo.png" alt="Capco Construction logo" />
+      <a class="brand" href="../" aria-label="Capco Construction home">
+        <img src="../capcologo.png" alt="Capco Construction logo" />
       </a>
 
       <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Open menu">
@@ -22,10 +19,10 @@
       </button>
 
       <nav class="site-nav" id="siteNav">
-        <a href="index.html">Home</a>
-        <a href="index.html#services">Services</a>
-        <a href="portfolio.html" aria-current="page">Portfolio</a>
-        <a href="index.html#contact">Contact</a>
+        <a href="../">Home</a>
+        <a href="../#services">Services</a>
+        <a href="./" aria-current="page">Portfolio</a>
+        <a href="../#contact">Contact</a>
         <a class="nav-cta" href="tel:7059493564">Call 705-949-3564</a>
       </nav>
     </div>
@@ -37,17 +34,11 @@
         <div class="portfolio-hero-copy">
           <p class="eyebrow">Past work</p>
           <h1>Local craftsmanship backed by decades of experience.</h1>
-          <p>
-            Capco Construction has been serving Sault Ste. Marie for decades, completing outdoor builds,
-            accessibility improvements, fencing, decks, sunrooms, gazebos, and all kinds of general contracting work.
-            This gallery is built so your project photos can keep growing over time.
-          </p>
-
+          <p>Capco Construction has been serving Sault Ste. Marie for decades, completing decks, fences, accessibility improvements, exterior structures, and all kinds of general contracting work. This gallery is set up so project photos can keep growing over time.</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="tel:7059493564">Request an Estimate</a>
-            <a class="btn btn-secondary" href="index.html#services">View Services</a>
+            <a class="btn btn-secondary" href="../#services">View Services</a>
           </div>
-
           <ul class="hero-points">
             <li>Serving Sault Ste. Marie since 1990</li>
             <li>Residential and exterior specialists</li>
@@ -57,7 +48,7 @@
 
         <div class="showcase-card">
           <div class="showcase-media-wrap">
-            <img id="featuredPortfolioImage" class="showcase-media" src="assets/IMG_0144.jpeg" alt="Capco Construction completed project" />
+            <img id="featuredPortfolioImage" class="showcase-media" src="../assets/IMG_0144.jpeg" alt="Capco Construction completed project" />
             <div class="showcase-overlay">
               <span class="showcase-pill">Featured Project</span>
               <h2 id="featuredPortfolioTitle">Completed local work</h2>
@@ -74,13 +65,10 @@
 
     <section class="section portfolio-section">
       <div class="container">
-        <div class="section-heading reveal">
+        <div class="section-head reveal">
           <p class="section-tag">Project gallery</p>
           <h2>Browse recent and past Capco jobs.</h2>
-          <p>
-            The gallery below pulls from your uploaded job photos. You can keep dropping more images into the assets folder
-            and add them to the list in <strong>script.js</strong> whenever you want to expand it.
-          </p>
+          <p>The gallery below is built from your uploaded photo filenames and rotates the featured image automatically.</p>
         </div>
 
         <div class="portfolio-toolbar reveal">
@@ -95,33 +83,23 @@
         <div class="portfolio-grid" id="portfolioGrid"></div>
       </div>
     </section>
-
-    <section class="section section-tight portfolio-note-band">
-      <div class="container">
-        <div class="cta-band-inner reveal">
-          <div>
-            <p class="section-tag">Need work quoted?</p>
-            <h2>Trusted local contracting for projects big and small.</h2>
-            <p>
-              From decks and fences to ramps, custom exterior work, renovations, and general contracting,
-              Capco Construction has been helping local property owners improve their spaces for decades.
-            </p>
-          </div>
-          <div class="cta-band-actions">
-            <a class="btn btn-primary" href="tel:7059493564">Call Now</a>
-            <a class="btn btn-secondary" href="mailto:capcoscape@hotmail.com">Email Capco</a>
-          </div>
-        </div>
-      </div>
-    </section>
   </main>
 
   <footer class="site-footer minimal-footer">
+    <div class="container footer-grid footer-grid-compact">
+      <div class="footer-brand">
+        <img class="footer-logo" src="../capcologo.png" alt="Capco Construction logo" />
+      </div>
+      <div class="footer-block">
+        <p><strong>Phone:</strong> <a href="tel:7059493564">705-949-3564</a></p>
+        <p><strong>Email:</strong> <a href="mailto:capcoscape@hotmail.com">capcoscape@hotmail.com</a></p>
+      </div>
+    </div>
     <div class="container footer-bottom">
       <p>&copy; 2026 Capco Construction. Serving Sault Ste. Marie since 1990.</p>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="../script.js"></script>
 </body>
 </html>
