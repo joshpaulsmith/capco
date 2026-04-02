@@ -580,4 +580,24 @@ h3 {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   opacity: 0.75;
+}/* Portfolio featured project overlay text fix */
+.showcase-overlay,
+.showcase-overlay h2,
+.showcase-overlay p,
+.showcase-overlay .showcase-pill {
+  color: #fff;
+}
+
+.showcase-overlay h2 {
+  color: #fff;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+}
+
+.showcase-overlay p {
+  color: rgba(255, 255, 255, 0.88);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.showcase-pill {
+  color: #000;
 }
