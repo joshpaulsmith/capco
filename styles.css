@@ -380,7 +380,7 @@ h3 {
 }
 
 .footer-grid {
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: minmax(0, 220px) 1fr 1fr;
   align-items: start;
 }
 
@@ -390,11 +390,13 @@ h3 {
 }
 
 .footer-brand {
+  justify-self: start;
   max-width: 240px;
 }
 
 .footer-logo {
-  width: clamp(130px, 12vw, 170px);
+  width: 150px;
+  max-width: 100%;
   height: auto;
   margin-bottom: 1rem;
 }
