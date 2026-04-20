@@ -389,8 +389,13 @@ h3 {
   color: var(--light-muted);
 }
 
+.footer-brand {
+  max-width: 240px;
+}
+
 .footer-logo {
-  width: clamp(180px, 20vw, 240px);
+  width: clamp(130px, 12vw, 170px);
+  height: auto;
   margin-bottom: 1rem;
 }
 
