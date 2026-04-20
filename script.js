@@ -37,68 +37,68 @@ const assetBase = onPortfolioPage ? '../assets/' : 'assets/';
 const portfolioItems = [
   {
     filename: 'IMG_0144.jpeg',
-    title: 'Gazebo & sunroom work',
-    caption: 'Outdoor structure work designed to extend comfort and function.',
+    title: 'Gazebo and enclosed outdoor living space',
+    caption: 'Custom structure work that adds shade, comfort, and more usable space outdoors.',
     category: 'structures'
   },
   {
     filename: 'IMG_0227.jpeg',
-    title: 'Custom deck project',
-    caption: 'Clean, durable deck construction built for everyday use.',
+    title: 'Pressure-treated deck build',
+    caption: 'A clean, durable deck designed for everyday family use and long-term performance.',
     category: 'decks'
   },
   {
     filename: 'IMG_0362.jpeg',
-    title: 'Exterior woodwork detail',
-    caption: 'Detailed carpentry and finishing for polished exterior spaces.',
+    title: 'Exterior carpentry and finish detail',
+    caption: 'Trim, framing, and finishing work completed with a polished, practical result.',
     category: 'general'
   },
   {
     filename: 'IMG_0390.jpeg',
-    title: 'Finished outdoor living area',
-    caption: 'A finished project focused on function, flow, and curb appeal.',
+    title: 'Backyard living area upgrade',
+    caption: 'An outdoor project built to improve flow, comfort, and day-to-day use of the space.',
     category: 'general'
   },
   {
     filename: 'IMG_0524.jpeg',
-    title: 'Accessibility ramp',
-    caption: 'Mobility-focused ramp construction for easier, safer access.',
+    title: 'Accessibility ramp with safe entry access',
+    caption: 'Mobility-focused ramp construction built for easier access, stability, and confidence.',
     category: 'ramps'
   },
   {
     filename: 'IMG_0539.jpeg',
-    title: 'Fence installation',
-    caption: 'Privacy fencing built for strength, clean lines, and longevity.',
+    title: 'Privacy fence installation',
+    caption: 'A strong, clean-lined fence installation built for privacy, durability, and curb appeal.',
     category: 'fences'
   },
   {
     filename: 'IMG_0553.jpeg',
-    title: 'Property upgrade project',
-    caption: 'General contracting work that improves the look and use of a space.',
+    title: 'Property upgrade and exterior improvements',
+    caption: 'General contracting work that improved both the look of the property and how it functions.',
     category: 'general'
   },
   {
     filename: 'IMG_1193.jpeg',
-    title: 'Completed exterior build',
-    caption: 'Exterior contracting work completed with a clean, durable finish.',
+    title: 'Completed exterior build and finishing',
+    caption: 'Exterior contracting completed with careful finishing details and a long-lasting result.',
     category: 'general'
   },
   {
     filename: 'IMG_7246.jpeg',
-    title: 'Project detail',
-    caption: 'A closer look at finished Capco workmanship.',
+    title: 'Finished construction detail',
+    caption: 'A closer look at the fit, finish, and workmanship behind a completed Capco project.',
     category: 'general'
   },
   {
     filename: 'IMG_7251.jpeg',
-    title: 'Custom carpentry detail',
-    caption: 'Detail-focused carpentry for a practical, polished result.',
+    title: 'Custom carpentry and structure detail',
+    caption: 'Detail-focused carpentry completed for a practical build with a polished final look.',
     category: 'structures'
   },
   {
     filename: 'IMG_7445.jpeg',
-    title: 'Outdoor project work',
-    caption: 'Exterior project work built for daily use and lasting value.',
+    title: 'Outdoor structure and finishing work',
+    caption: 'Exterior project work built for everyday use, solid performance, and lasting value.',
     category: 'structures'
   }
 ];
@@ -193,4 +193,31 @@ if (featuredPortfolioImage) {
       startAutoRotate();
     });
   }
+}
+
+const quoteForm = document.getElementById('quoteForm');
+
+if (quoteForm) {
+  quoteForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    const name = quoteForm.querySelector('#quoteName')?.value.trim() || '';
+    const phone = quoteForm.querySelector('#quotePhone')?.value.trim() || '';
+    const email = quoteForm.querySelector('#quoteEmail')?.value.trim() || '';
+    const location = quoteForm.querySelector('#quoteLocation')?.value.trim() || '';
+    const project = quoteForm.querySelector('#quoteProject')?.value.trim() || '';
+    const details = quoteForm.querySelector('#quoteDetails')?.value.trim() || '';
+
+    const subject = encodeURIComponent(`Estimate request from ${name || 'website visitor'}`);
+    const body = encodeURIComponent(
+      `Name: ${name}\n` +
+      `Phone: ${phone}\n` +
+      `Email: ${email}\n` +
+      `Project location: ${location}\n` +
+      `Project type: ${project}\n\n` +
+      `Project details:\n${details}`
+    );
+
+    window.location.href = `mailto:capcoscape@hotmail.com?subject=${subject}&body=${body}`;
+  });
 }

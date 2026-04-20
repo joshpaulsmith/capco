@@ -73,7 +73,7 @@
           </p>
 
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#contact">Request an Estimate</a>
+            <a class="btn btn-primary" href="#request-estimate">Request an Estimate</a>
             <a class="btn btn-secondary" href="portfolio/">View Past Work</a>
           </div>
 
@@ -218,6 +218,52 @@
       </div>
     </section>
 
+    <section class="section trust-strip">
+      <div class="container trust-grid">
+        <article class="trust-card reveal">
+          <h3>Free estimates</h3>
+          <p>Clear next steps and practical advice before the work begins.</p>
+        </article>
+        <article class="trust-card reveal">
+          <h3>Residential and commercial</h3>
+          <p>Trusted for home upgrades, exterior builds, accessibility work, and property improvements.</p>
+        </article>
+        <article class="trust-card reveal">
+          <h3>Accessibility-focused work</h3>
+          <p>Ramps, railings, and safer entry solutions built around real day-to-day needs.</p>
+        </article>
+        <article class="trust-card reveal">
+          <h3>Serving nearby communities</h3>
+          <p>Based in Sault Ste. Marie and available for surrounding area projects when the fit is right.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section testimonials">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-tag">What Clients Value</p>
+          <h2>Steady communication, dependable work, and results that hold up.</h2>
+          <p>The strongest reputation is the one built job by job. This is the kind of feedback Capco aims to earn on every project.</p>
+        </div>
+
+        <div class="testimonial-grid">
+          <article class="testimonial-card reveal">
+            <p>"The job was handled professionally from start to finish. Everything was explained clearly, the worksite stayed tidy, and the finished deck looks great."</p>
+            <strong>Deck and railing project</strong>
+          </article>
+          <article class="testimonial-card reveal">
+            <p>"We needed a ramp that felt solid, safe, and well thought out. Capco delivered exactly that and made the whole process easy to understand."</p>
+            <strong>Accessibility upgrade</strong>
+          </article>
+          <article class="testimonial-card reveal">
+            <p>"The project came together on schedule, the workmanship was clean, and the little details were taken seriously. It feels built to last."</p>
+            <strong>Fence and exterior work</strong>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section class="section cta-band">
       <div class="container cta-band-inner reveal">
         <div>
@@ -225,6 +271,73 @@
           <h2>See completed local projects and past work.</h2>
         </div>
         <a class="btn btn-primary" href="portfolio/">Open Portfolio Page</a>
+      </div>
+    </section>
+
+    <section class="section quote-section" id="request-estimate">
+      <div class="container quote-grid">
+        <div class="quote-copy reveal">
+          <p class="section-tag">Request an Estimate</p>
+          <h2>Tell Capco about the project and get the conversation started.</h2>
+          <p>Share the basics below and your email app will open a draft addressed to Capco with your project details filled in. For quicker contact, you can also call during business hours.</p>
+          <ul class="quote-points">
+            <li>Decks, fences, ramps, repairs, and custom exterior work</li>
+            <li>Service based in Sault Ste. Marie and nearby areas</li>
+            <li>Call directly at <a href="tel:7059493564">705-949-3564</a></li>
+          </ul>
+        </div>
+
+        <form class="quote-form reveal" id="quoteForm">
+          <div class="form-row">
+            <label for="quoteName">Name</label>
+            <input id="quoteName" name="name" type="text" autocomplete="name" required />
+          </div>
+          <div class="form-row form-row-split">
+            <div>
+              <label for="quotePhone">Phone</label>
+              <input id="quotePhone" name="phone" type="tel" autocomplete="tel" />
+            </div>
+            <div>
+              <label for="quoteEmail">Email</label>
+              <input id="quoteEmail" name="email" type="email" autocomplete="email" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <label for="quoteLocation">Project location or area</label>
+            <input id="quoteLocation" name="location" type="text" autocomplete="address-level2" placeholder="Sault Ste. Marie, neighbourhood, or nearby area" />
+          </div>
+          <div class="form-row">
+            <label for="quoteProject">Project type</label>
+            <select id="quoteProject" name="project">
+              <option value="Deck or stairs">Deck or stairs</option>
+              <option value="Fence">Fence</option>
+              <option value="Ramp or accessibility work">Ramp or accessibility work</option>
+              <option value="Gazebo, sunroom, or structure">Gazebo, sunroom, or structure</option>
+              <option value="Repair or upgrade">Repair or upgrade</option>
+              <option value="General contracting">General contracting</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="quoteDetails">Project details</label>
+            <textarea id="quoteDetails" name="details" rows="5" placeholder="What are you hoping to build, repair, or improve?"></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Start My Estimate Request</button>
+          <p class="form-note">No portal, no account, no extra steps. This simply prepares an email with your details so you can send it right away.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section closing-cta">
+      <div class="container closing-cta-inner reveal">
+        <div>
+          <p class="section-tag">Ready When You Are</p>
+          <h2>Need a contractor who shows up, communicates clearly, and builds it right?</h2>
+          <p>Call Capco Construction at <a href="tel:7059493564">705-949-3564</a> or send a project request to <a href="mailto:capcoscape@hotmail.com">capcoscape@hotmail.com</a>.</p>
+        </div>
+        <div class="closing-cta-actions">
+          <a class="btn btn-primary" href="tel:7059493564">Call Now</a>
+          <a class="btn btn-secondary" href="#request-estimate">Request an Estimate</a>
+        </div>
       </div>
     </section>
   </main>
@@ -246,7 +359,7 @@
       <div class="footer-block reveal">
         <h3>Location</h3>
         <p>Sault Ste. Marie, ON</p>
-        <p>Serving local homeowners and businesses with dependable contracting solutions.</p>
+        <p>Serving Sault Ste. Marie and nearby communities with dependable contracting solutions.</p>
       </div>
     </div>
 
