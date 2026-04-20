@@ -55,14 +55,12 @@ h1, h2, h3, p { margin-top: 0; }
 h1 {
   font-size: clamp(2.5rem, 5vw, 4.7rem);
   line-height: 1.02;
-  letter-spacing: -0.03em;
   color: var(--text);
 }
 
 h2 {
   font-size: clamp(2rem, 3.2vw, 3rem);
   line-height: 1.1;
-  letter-spacing: -0.03em;
   color: var(--text);
 }
 
@@ -600,4 +598,14 @@ h3 {
 
 .showcase-pill {
   color: #000;
+}
+
+.error-page {
+  min-height: calc(100vh - 82px);
+  display: grid;
+  align-items: center;
+}
+
+.error-inner {
+  max-width: 760px;
 }

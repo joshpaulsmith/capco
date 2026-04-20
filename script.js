@@ -76,6 +76,30 @@ const portfolioItems = [
     title: 'Property upgrade project',
     caption: 'General contracting work that improves the look and use of a space.',
     category: 'general'
+  },
+  {
+    filename: 'IMG_1193.jpeg',
+    title: 'Completed exterior build',
+    caption: 'Exterior contracting work completed with a clean, durable finish.',
+    category: 'general'
+  },
+  {
+    filename: 'IMG_7246.jpeg',
+    title: 'Project detail',
+    caption: 'A closer look at finished Capco workmanship.',
+    category: 'general'
+  },
+  {
+    filename: 'IMG_7251.jpeg',
+    title: 'Custom carpentry detail',
+    caption: 'Detail-focused carpentry for a practical, polished result.',
+    category: 'structures'
+  },
+  {
+    filename: 'IMG_7445.jpeg',
+    title: 'Outdoor project work',
+    caption: 'Exterior project work built for daily use and lasting value.',
+    category: 'structures'
   }
 ];
 
@@ -94,7 +118,7 @@ function renderPortfolioGrid(filter = 'all') {
     article.className = 'portfolio-card reveal is-visible';
     article.dataset.category = item.category;
     article.innerHTML = `
-      <img src="${assetBase}${item.filename}" alt="${item.title}">
+      <img src="${assetBase}${item.filename}" width="1200" height="1600" loading="lazy" alt="${item.title}">
       <div class="portfolio-card-body">
         <span class="portfolio-card-meta">${item.category}</span>
         <h3>${item.title}</h3>
@@ -113,8 +137,12 @@ if (filterButtons.length) {
   filterButtons.forEach((button) => {
     button.addEventListener('click', () => {
       currentFilter = button.dataset.filter;
-      filterButtons.forEach((btn) => btn.classList.remove('active'));
+      filterButtons.forEach((btn) => {
+        btn.classList.remove('active');
+        btn.setAttribute('aria-pressed', 'false');
+      });
       button.classList.add('active');
+      button.setAttribute('aria-pressed', 'true');
       renderPortfolioGrid(currentFilter);
     });
   });
